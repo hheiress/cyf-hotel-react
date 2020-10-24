@@ -1,6 +1,22 @@
 .App {
   text-align: left;
 }
+.Logo {
+  width: 40px;
+  height: 40px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #222;
+  height: 70px;
+  padding: 15px;
+  color: white;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -10,7 +26,7 @@
 .App-header {
   background-color: #222;
   height: 50px;
-  padding: 20px;
+  padding: 10px;
   color: white;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
@@ -54,4 +70,8 @@ tr {
 
 .card {
   width: 18rem;
+}
+
+ul {
+  list-style-type: none;
 }
