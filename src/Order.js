@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
 function Order(props) {
-  return <li>Pizzas: {props.orders}</li>;
+  return (
+    <div>
+      <li>
+        {props.orderType}: {props.orders}
+      </li>
+    </div>
+  );
 }
 export default Order;

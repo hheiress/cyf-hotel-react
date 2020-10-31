@@ -4,9 +4,7 @@ import Restaurant from "./Restaurant";
 import TouristCities from "./TouristCities";
 import Bookings from "./Bookings";
 import "./App.css";
-
 import Footer from "./Footer";
-import RestaurantButton from "./RestaurantButton";
 
 const App = () => {
   return (
