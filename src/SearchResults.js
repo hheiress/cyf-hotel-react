@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import SearchResultLine from "./SearchResultLine";
+import CustomerProfile from "./CustomerProfile";
 
 const SearchResults = props => {
   return (
@@ -8,7 +9,6 @@ const SearchResults = props => {
       <table className="table">
         <thead>
           <tr>
-            <th>id</th>
             <th>Title</th>
             <th>First name</th>
             <th>Surname</th>
@@ -17,11 +17,16 @@ const SearchResults = props => {
             <th>Check in date</th>
             <th>Check out date</th>
             <th>Number of nights</th>
+            <th>Show profile</th>
           </tr>
         </thead>
         <tbody>
           {props.results.map((item, index) => (
-            <SearchResultLine index={index} item={item} />
+            <SearchResultLine
+              index={index}
+              item={item}
+              onShowProfile={props.onShowProfile}
+            />
           ))}
         </tbody>
       </table>
